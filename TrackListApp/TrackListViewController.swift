@@ -9,6 +9,8 @@ import UIKit
 
 final class TrackListViewController: UITableViewController {
 
+    private let trackList = Track.getTrackList()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
