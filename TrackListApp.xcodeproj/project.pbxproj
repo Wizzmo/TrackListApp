@@ -13,6 +13,7 @@
 		9817B6FB2B2DCD3800F5ABE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9817B6FA2B2DCD3800F5ABE1 /* Assets.xcassets */; };
 		9817B6FE2B2DCD3800F5ABE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9817B6FC2B2DCD3800F5ABE1 /* LaunchScreen.storyboard */; };
 		985157C02B59897700DA57AE /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985157BF2B59897700DA57AE /* TrackListViewController.swift */; };
+		985157C42B5D70F500DA57AE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985157C32B5D70F500DA57AE /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9817B6FD2B2DCD3800F5ABE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9817B6FF2B2DCD3800F5ABE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		985157BF2B59897700DA57AE /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
+		985157C32B5D70F500DA57AE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9817B6F12B2DCD3700F5ABE1 /* AppDelegate.swift */,
 				9817B6F32B2DCD3700F5ABE1 /* SceneDelegate.swift */,
 				985157BF2B59897700DA57AE /* TrackListViewController.swift */,
+				985157C32B5D70F500DA57AE /* Track.swift */,
 				9817B6F72B2DCD3700F5ABE1 /* Main.storyboard */,
 				9817B6FA2B2DCD3800F5ABE1 /* Assets.xcassets */,
 				9817B6FC2B2DCD3800F5ABE1 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				9817B6F22B2DCD3700F5ABE1 /* AppDelegate.swift in Sources */,
 				9817B6F42B2DCD3700F5ABE1 /* SceneDelegate.swift in Sources */,
 				985157C02B59897700DA57AE /* TrackListViewController.swift in Sources */,
+				985157C42B5D70F500DA57AE /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

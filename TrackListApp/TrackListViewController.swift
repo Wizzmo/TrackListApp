@@ -17,3 +17,13 @@ final class TrackListViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
 }
+
+extension TrackListViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+}
