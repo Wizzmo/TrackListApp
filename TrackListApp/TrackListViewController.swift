@@ -13,6 +13,7 @@ final class TrackListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 80
     }
 
     // MARK: - Navigation
@@ -22,10 +23,23 @@ final class TrackListViewController: UITableViewController {
 
 extension TrackListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        trackList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "trackCell", for: indexPath)
+        let track = trackList[indexPath.row]
+        
+        var content = cell.defaultContentConfiguration()
+        content.text = track.song
+        content.secondaryText = track.artist
+        content.image = UIImage(named: track.title)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        
+        cell.contentConfiguration = content
+        
+        return cell
     }
 }
+
+// MARK: - UITableViewDelegate
