@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,6 +40,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hhs-iL-oFS" kind="show" id="hg1-Km-aez"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -51,6 +55,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiY-vW-1D9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1121" y="-312"/>
+        </scene>
+        <!--Track Info-->
+        <scene sceneID="EL5-AR-WdX">
+            <objects>
+                <viewController id="hhs-iL-oFS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bsi-8S-0s7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Zuv-ou-oyU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Track Info" id="LVp-S6-BUb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1r-EU-b1C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="-313"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I76-Ss-I2h">
