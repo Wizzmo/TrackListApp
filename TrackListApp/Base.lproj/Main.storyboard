@@ -59,7 +59,7 @@
         <!--Track Info-->
         <scene sceneID="EL5-AR-WdX">
             <objects>
-                <viewController id="hhs-iL-oFS" sceneMemberID="viewController">
+                <viewController id="hhs-iL-oFS" customClass="TrackDetailsViewController" customModule="TrackListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bsi-8S-0s7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +91,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Track Info" id="LVp-S6-BUb"/>
+                    <connections>
+                        <outlet property="artCoverImageView" destination="7bz-X6-hAm" id="cxm-Cx-Ues"/>
+                        <outlet property="trackTitleLabel" destination="32Q-9x-L7S" id="uN1-qN-ZWA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1r-EU-b1C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
