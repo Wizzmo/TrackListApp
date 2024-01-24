@@ -63,8 +63,32 @@
                     <view key="view" contentMode="scaleToFill" id="Bsi-8S-0s7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Hp7-5x-f2Y">
+                                <rect key="frame" x="16" y="136" width="343" height="375"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7bz-X6-hAm">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="331"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-9x-L7S">
+                                        <rect key="frame" x="0.0" y="351" width="343" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="bC1-q4-lkO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Zuv-ou-oyU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hp7-5x-f2Y" firstAttribute="top" secondItem="Zuv-ou-oyU" secondAttribute="top" constant="20" id="AOX-Yw-mMd"/>
+                            <constraint firstItem="Hp7-5x-f2Y" firstAttribute="leading" secondItem="Zuv-ou-oyU" secondAttribute="leading" constant="16" id="GTH-o3-or3"/>
+                            <constraint firstItem="Zuv-ou-oyU" firstAttribute="trailing" secondItem="Hp7-5x-f2Y" secondAttribute="trailing" constant="16" id="XXu-By-WTc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Track Info" id="LVp-S6-BUb"/>
                 </viewController>
