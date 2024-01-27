@@ -9,7 +9,7 @@ import UIKit
 
 final class TrackListViewController: UITableViewController {
 
-    private let trackList = Track.getTrackList()
+    private var trackList = Track.getTrackList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,8 @@ final class TrackListViewController: UITableViewController {
     }
 }
 
+
+// MARK: - UITableViewDataSource
 extension TrackListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         trackList.count
@@ -44,6 +46,11 @@ extension TrackListViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let currentTrack = trackList.remove(at: sourceIndexPath.row)
+        trackList.insert(currentTrack, at: destinationIndexPath.row)
+    }
 }
 
 // MARK: - UITableViewDelegate
@@ -51,5 +58,13 @@ extension TrackListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let track = trackList[indexPath.row]
         performSegue(withIdentifier: "showDetails", sender: track)
+    }
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        .none
+    }
+    
+    override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        false
     }
 }
