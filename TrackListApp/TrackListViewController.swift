@@ -14,13 +14,14 @@ final class TrackListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
+        navigationItem.leftBarButtonItem = editButtonItem
     }
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+//        guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let detailsVC = segue.destination as? TrackDetailsViewController
-        detailsVC?.track = trackList[indexPath.row]
+        detailsVC?.track = sender as? Track
     }
 }
 
@@ -46,3 +47,9 @@ extension TrackListViewController {
 }
 
 // MARK: - UITableViewDelegate
+extension TrackListViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let track = trackList[indexPath.row]
+        performSegue(withIdentifier: "showDetails", sender: track)
+    }
+}
